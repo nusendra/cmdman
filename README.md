@@ -1,4 +1,4 @@
-# cmdlist - Command List Manager
+# cmdman - Command Manager
 
 A CLI tool written in Rust to save, manage, and execute custom commands with named aliases.
 
@@ -8,7 +8,7 @@ A CLI tool written in Rust to save, manage, and execute custom commands with nam
 - **Add commands**: Save new commands with custom names
 - **Delete commands**: Remove commands you no longer need
 - **Execute commands**: Run saved commands with full terminal control
-- **JSON storage**: Commands are stored in `~/.config/cmdlist/commands.json`
+- **JSON storage**: Commands are stored in `~/.config/cmdman/commands.json`
 
 ## Building
 
@@ -16,7 +16,7 @@ A CLI tool written in Rust to save, manage, and execute custom commands with nam
 cargo build --release
 ```
 
-The binary will be at `target/release/cmdlist`
+The binary will be at `target/release/cmdman`
 
 ## Installation
 
@@ -31,7 +31,7 @@ cargo install --path .
 Run the application:
 
 ```bash
-cmdlist
+cmdman
 ```
 
 ### Adding a Command
@@ -60,7 +60,7 @@ cmdlist
 
 ## Configuration
 
-Commands are stored in JSON format at `~/.config/cmdlist/commands.json`. You can edit this file directly if needed.
+Commands are stored in JSON format at `~/.config/cmdman/commands.json`. You can edit this file directly if needed.
 
 Example:
 ```json

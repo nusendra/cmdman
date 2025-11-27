@@ -1,5 +1,5 @@
 [package]
-name = "cmdlist"
+name = "cmdman"
 version = "0.1.0"
 edition = "2021"
 
@@ -12,5 +12,5 @@ regex = "1.10"
 crossterm = "0.25"
 
 [[bin]]
-name = "cmdlist"
+name = "cmdman"
 path = "src/main.rs"

@@ -6,10 +6,10 @@ use std::path::PathBuf;
 fn get_config_path() -> Result<PathBuf, Box<dyn std::error::Error>> {
     let config_dir = dirs::config_dir()
         .ok_or("Could not determine config directory")?;
-    let cmdlist_dir = config_dir.join("cmdlist");
+    let cmdman_dir = config_dir.join("cmdman");
 
-    fs::create_dir_all(&cmdlist_dir)?;
-    Ok(cmdlist_dir.join("commands.json"))
+    fs::create_dir_all(&cmdman_dir)?;
+    Ok(cmdman_dir.join("commands.json"))
 }
 
 pub fn load_commands() -> Result<Vec<Command>, Box<dyn std::error::Error>> {
